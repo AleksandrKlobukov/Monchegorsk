@@ -1,7 +1,7 @@
 .content {
   width: 100vw;
   height: 100vh;
-  background-image: url(./images/детали_лица-01.png);
+  background-image: url(./images/background_pixel.png);
   border: 20px solid #436fb4;
   box-sizing: border-box;
 }
