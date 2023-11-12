@@ -349,10 +349,19 @@ document.querySelector(".menu-items").addEventListener(
   true
 ); // true для захвата события на фазе захвата, а не всплытия
 
-document.getElementById("scroll-up").addEventListener("click", function () {
-  document.querySelector(".menu-items").scrollBy(0, -300); // прокрутка вверх на 100 пикселей
-});
+document.querySelector(".sidebar").addEventListener(
+  "wheel",
+  function (e) {
+    e.stopPropagation(); // Останавливает всплытие события
+  },
+  true
+); // true для захвата события на фазе захвата, а не всплытия
 
-document.getElementById("scroll-down").addEventListener("click", function () {
-  document.querySelector(".menu-items").scrollBy(0, 300); // прокрутка вниз на 100 пикселей
+document.getElementById("toggle-button").addEventListener("click", function () {
+  let sidebar = document.getElementById("sidebar");
+  if (sidebar.classList.contains("open")) {
+    sidebar.classList.remove("open");
+  } else {
+    sidebar.classList.add("open");
+  }
 });
