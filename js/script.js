@@ -365,3 +365,30 @@ document.getElementById("toggle-button").addEventListener("click", function () {
     sidebar.classList.add("open");
   }
 });
+
+// Get the popup and close button elements
+// let popup = document.getElementById("popup-overlay");
+// const closeButton = document.getElementsByClassName("close-button")[0];
+
+// Function to open the popup
+// function openPopup() {
+//   popup.style.display = "block";
+// }
+
+// Close the popup when the user clicks on <span> (x)
+// closeButton.onclick = function () {
+//   popup.style.display = "none";
+// };
+
+// Close the popup when the user clicks anywhere outside of the popup
+// window.onclick = function (event) {
+//   if (event.target == popup) {
+//     popup.style.display = "none";
+//   }
+// };
+
+// Add functionality for the slider (e.g., changing slides, adding arrows and dots functionality)
+// ...
+
+// Call openPopup() wherever you need to open the popup, e.g., on a button click or marker click
+// openPopup();
