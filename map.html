@@ -6,14 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" charset="utf-8" href="leaflet/leaflet.css" />
     <link rel="stylesheet" href="./Fonts/fonts.css" />
-    <script
-      type="text/javascript"
-      charset="utf-8"
-      src="leaflet/leaflet.js"
-    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" charset="utf-8" src="leaflet/leaflet.js"></script>
   </head>
   <body>
-    <div class="map" id="mapid" style="height: 100vh; width: 100vw"></div>
+    <div class="map" id="mapid" style="height: 100vh; width: 100vw">
+      <nav class="navigation">
+        <div class="menu-items">
+          <ul class="left">
+            <li><button class="Vitteguba">Виттегуба</button></li>
+            <li><button class="Vysokiy">Высокий</button></li>
+            <li><button class="VysokiyOstrov">Высокий остров</button></li>
+            <li><button class="DevichyaLambina">Девичья Ламбина</button></li>
+            <li><button class="Dolgoe">Долгое</button></li>
+            <li><button class="Zhdanova">Жданова</button></li>
+            <li><button class="Zheleznodorozhnyi">Железнодорожный</button></li>
+            <li><button class="Imandra">Имандра</button></li>
+            <li><button class="IokostrovskiiProliv">Иокостровский пролив</button></li>
+            <li><button class="Kashkozero">Кашкозеро</button></li>
+            <li><button class="KetkyavrKent">Кетькявр кент</button></li>
+            <li><button class="KilevaevskiNavolok">Килеваевский наволок</button></li>
+            <li><button class="KislayaGuba">Кислая губа</button></li>
+            <li><button class="KoimaGuba">Койма губа</button></li>
+            <li><button class="KumuzheBolshoe">Кумужье Большое</button></li>
+            <li><button class="KumuzheMaloe">Кумужье Малое</button></li>
+            <li><button class="Kuna">Куна</button></li>
+            <li><button class="Kurenga">Куренга</button></li>
+            <li><button class="Kutskol">Куцколь</button></li>
+            <li><button class="Laplandiya">Лапландия</button></li>
+            <li>
+              <button class="LaplandZapovednik">Лапландский государственный заповедник</button>
+            </li>
+            <li><button class="Lumbolka">Лумболка</button></li>
+            <li><button class="Markvuppi">Марквуппи</button></li>
+            <li><button class="Monche-Guba">Монче-губа</button></li>
+            <li><button class="Murmanles">Мурманлес</button></li>
+            <li><button class="NefelinovyePeski">Нефелиновые пески</button></li>
+            <li><button class="Nittis">Ниттис</button></li>
+            <li><button class="Nud">Нюд</button></li>
+            <li><button class="NudVerhnii">Нюд Верхний</button></li>
+            <li><button class="NudNizhnii">Нюд Нижний</button></li>
+            <li><button class="Olenya">Оленья</button></li>
+            <li><button class="OlkhovyiNavolok">Ольховый Наволок</button></li>
+            <li><button class="Ostrovskoye">Островское</button></li>
+            <li><button class="Peche-Guba">Пече–Губа</button></li>
+            <li><button class="Pivnus-Ozero">Пивнус-Озеро</button></li>
+            <li><button class="Pionerskii">Пионерский</button></li>
+            <li><button class="Polovinka">Половинка</button></li>
+            <li><button class="Priozernyi">Приозерный</button></li>
+            <li><button class="Protoki">Протоки</button></li>
+            <li><button class="Ras-Navolok">Рас-наволок</button></li>
+            <li><button class="Rizh-Guba">Риж-губа</button></li>
+            <li><button class="Rudnyi">Рудный</button></li>
+            <li><button class="SobachyaGuba">Собачья губа</button></li>
+            <li><button class="SovhozProdsnaba">Совхоз Продснаба</button></li>
+            <li><button class="SopchaBolshaya">Сопча Большая</button></li>
+            <li><button class="SopchaMalaya">Сопча Малая</button></li>
+            <li><button class="SuhoiPorog">Сухой порог</button></li>
+            <li><button class="SuchiyaGuba">Сучья губа</button></li>
+            <li><button class="Symba">Сымба</button></li>
+            <li><button class="Travyanoi">Травяной</button></li>
+            <li><button class="Trostnikovyi">Тростниковый</button></li>
+            <li><button class="Chudozero">Чудозеро</button></li>
+            <li><button class="ShuchiyaGuba">Щучья губа</button></li>
+            <li><button class="YagelnyiBor">Ягельный Бор</button></li>
+            <li><button class="Yarva">Ярва</button></li>
+            <li><button class="twokm">2 км автодороги Оленегорск–Ловозеро</button></li>
+            <li><button class="ninekm">9 км автодороги Оленегорск–Ловозеро</button></li>
+            <li><button class="twofivekm">25 км автодороги Оленегорск–Ловозеро</button></li>
+            <li><button class="onesixkm">16 км железной дороги Оленегорск–Ловозеро</button></li>
+            <li><button class="onesevenkm">17 км железной дороги Оленегорск–Ловозеро</button></li>
+            <li><button class="twozerokm">20 км железной дороги Оленегорск–Ловозеро</button></li>
+            <li><button class="twosixkm">26 км железной дороги Оленегорск–Ловозеро</button></li>
+            <li><button class="twoninekm">29 км железной дороги Оленегорск–Ловозеро</button></li>
+            <li><button class="Rikotaibola">Рикотайбола</button></li>
+          </ul>
+        </div>
+        <div class="scroll-buttons">
+          <button class="scroll-button" id="scroll-up">Вверх</button>
+          <button class="scroll-button" id="scroll-down">Вниз</button>
+        </div>
+      </nav>
+    </div>
   </body>
-  <script src="script.js"></script>
+  <script src="./js/popuptext.js"></script>
+  <script src="./js/coords.js"></script>
+  <script src="./js/script.js"></script>
 </html>

@@ -681,3 +681,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
   border: 20px solid #436fb4;
   box-sizing: border-box;
 }
+
+.navigation {
+  z-index: 99999;
+  position: absolute;
+  top: 10%;
+  border: 2px solid red !important;
+  box-sizing: border-box;
+}
+
+li {
+  z-index: 999991;
+  cursor: pointer;
+}

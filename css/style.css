@@ -1,0 +1,99 @@
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/background_pixel.png);
+  border: 20px solid #436fb4;
+  box-sizing: border-box;
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  margin: 10vh auto;
+  margin-bottom: 10vh;
+}
+
+.paragraph {
+  margin: 0;
+  margin-left: 10%;
+  padding: 0;
+  height: 37vh;
+  width: 40vw;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.description {
+  width: 50vw;
+  height: 37vh;
+  margin-right: 10%;
+  resize: none;
+  border: none;
+  border-radius: 0.5cm;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow-x: hidden;
+  scrollbar-width: 2px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.down {
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  width: 80vw;
+  justify-items: start;
+}
+
+.arrow {
+  height: 15vh;
+}
+
+.navigation {
+  display: flex;
+  background-color: #f0f0f0; /* Светлый фон */
+  margin: 10px;
+  padding-top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  height: 100vh; /* высота равна высоте видимой области экрана */
+  /* overflow-y: auto; */
+}
+
+.menu-items {
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  scroll-behavior: smooth;
+
+  /* Остальные стили */
+}
+
+.navigation ul {
+  list-style: none; /* Убираем стандартные маркеры списка */
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+}
+
+.navigation li {
+  margin-bottom: 5px; /* Отступ между элементами списка */
+}
+
+.navigation button {
+  background-color: #007bff; /* Синий фон */
+  color: white; /* Белый текст */
+  border: none; /* Убираем границу */
+  padding: 8px 12px; /* Внутренние отступы */
+  text-align: left; /* Выравнивание текста по левому краю */
+  display: block; /* Занимает всю ширину родительского элемента */
+  width: 100%; /* Ширина на весь контейнер */
+  border-radius: 4px; /* Скругленные углы */
+}
+
+.navigation button:hover {
+  background-color: #0056b3; /* Темно-синий фон при наведении */
+}
