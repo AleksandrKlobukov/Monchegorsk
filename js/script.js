@@ -344,18 +344,18 @@ markersData.forEach((data) => {
 document.querySelector(".menu-items").addEventListener(
   "wheel",
   function (e) {
-    e.stopPropagation(); // Останавливает всплытие события
+    e.stopPropagation();
   },
   true
-); // true для захвата события на фазе захвата, а не всплытия
+);
 
 document.querySelector(".sidebar").addEventListener(
   "wheel",
   function (e) {
-    e.stopPropagation(); // Останавливает всплытие события
+    e.stopPropagation();
   },
   true
-); // true для захвата события на фазе захвата, а не всплытия
+);
 
 document.getElementById("toggle-button").addEventListener("click", function () {
   let sidebar = document.getElementById("sidebar");

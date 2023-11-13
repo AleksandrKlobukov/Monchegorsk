@@ -17,11 +17,11 @@ body {
   background-color: transparent;
   margin: 10px;
   padding-top: 0;
-  height: calc(100vh - 15vh); /* высота равна высоте видимой области экрана */
+  height: calc(100vh - 15vh);
   border: none;
   overflow: auto;
-  scrollbar-width: none; /* Для Firefox */
-  -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .navigation::-webkit-scrollbar {
@@ -36,43 +36,41 @@ body {
 }
 
 .navigation ul {
-  list-style: none; /* Убираем стандартные маркеры списка */
-  padding: 0 0 10px 0; /* Убираем внутренние отступы */
-  margin: 0; /* Убираем внешние отступы */
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
 }
 
 .navigation li {
   z-index: 999991;
   cursor: pointer;
-  margin-bottom: 5px; /* Отступ между элементами списка */
+  margin-bottom: 5px;
 }
 
 .navigation button {
-  background-color: lightgray; /* Синий фон */
-  color: black; /* Белый текст */
+  background-color: lightgray;
+  color: black;
   font-weight: bold;
-  border: none; /* Убираем границу */
-  padding: 8px 12px; /* Внутренние отступы */
-  text-align: left; /* Выравнивание текста по левому краю */
-  display: block; /* Занимает всю ширину родительского элемента */
-  width: 100%; /* Ширина на весь контейнер */
-  border-radius: 4px; /* Скругленные углы */
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .navigation button:hover {
-  background-color: rgb(47, 130, 194); /* Темно-синий фон при наведении */
+  background-color: rgb(47, 130, 194);
   color: white;
 }
 
 .sidebar {
   position: fixed;
-  /* overflow-y: auto; */
   top: 10%;
 
-  right: -40vw; /* Скрыть меню за правый край экрана */
+  right: -40vw;
   width: 40vw;
-  /* height: 100%; */
   background-color: #f0f0f0;
   transition: right 0.3s;
   z-index: 400;
@@ -87,10 +85,9 @@ body {
 
 .sidebar-content {
   height: calc(100vh - 15vh);
-  /* Задаём высоту, соответствующую высоте меню */
-  overflow-y: auto; /* Включаем вертикальную прокрутку, если текст не умещается */
-  padding: 15px; /* Отступы для текста внутри */
-  box-sizing: border-box; /* Учитываем padding в общей высоте */
+  overflow-y: auto;
+  padding: 15px;
+  box-sizing: border-box;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -107,7 +104,7 @@ body {
 }
 
 .sidebar.open {
-  right: 0; /* Показать меню */
+  right: 0;
 }
 
 #toggle-button {
@@ -117,51 +114,9 @@ body {
   position: absolute;
   top: 50%;
   cursor: pointer;
-  left: -70px; /* Переместить кнопку слева от меню */
+  left: -70px;
   width: 50px;
   height: 50px;
   background-size: contain;
   z-index: 1001;
-  /* Дополнительные стили для кнопки */
 }
-
-/*
-.popup-overlay {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.popup-container {
-  background-color: #fefefe;
-  margin: 15% auto; 
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; 
-  position: relative;
-}
-
-.close-button {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-button:hover,
-.close-button:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-}
-*/
