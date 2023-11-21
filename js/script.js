@@ -365,3 +365,6 @@ document.getElementById("toggle-button").addEventListener("click", function () {
     sidebar.classList.add("open");
   }
 });
+
+// Ale! Nichego ne vidno
+
