@@ -332,7 +332,10 @@ const markersData = [
 ];
 
 markersData.forEach((data) => {
-  const marker = L.marker(data.coords).bindPopup(data.popupText).openPopup().addTo(mymap);
+  const marker = L.marker(data.coords)
+    .bindPopup(data.popupText)
+    .openPopup()
+    .addTo(mymap);
 
   const button = document.querySelector(`.${data.className}`);
   button.addEventListener("click", function () {
@@ -346,7 +349,7 @@ document.querySelector(".menu-items").addEventListener(
   function (e) {
     e.stopPropagation();
   },
-  true
+  true,
 );
 
 document.querySelector(".sidebar").addEventListener(
@@ -354,7 +357,7 @@ document.querySelector(".sidebar").addEventListener(
   function (e) {
     e.stopPropagation();
   },
-  true
+  true,
 );
 
 document.getElementById("toggle-button").addEventListener("click", function () {
@@ -366,5 +369,34 @@ document.getElementById("toggle-button").addEventListener("click", function () {
   }
 });
 
-// Ale! Nichego ne vidno
+document.querySelector(".menu-items").addEventListener(
+  "wheel",
+  function (e) {
+    e.stopPropagation();
+  },
+  true,
+);
 
+document.querySelector(".menu-items").addEventListener(
+  "touchmove",
+  function (e) {
+    e.stopPropagation();
+  },
+  true,
+);
+
+document.querySelector(".sidebar").addEventListener(
+  "wheel",
+  function (e) {
+    e.stopPropagation();
+  },
+  true,
+);
+
+document.querySelector(".sidebar").addEventListener(
+  "touchmove",
+  function (e) {
+    e.stopPropagation();
+  },
+  true,
+);

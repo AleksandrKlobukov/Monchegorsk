@@ -17,11 +17,12 @@ body {
   background-color: transparent;
   margin: 10px;
   padding-top: 0;
-  height: calc(100vh - 15vh);
+  height: calc(100vh - 25vh);
   border: none;
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .navigation::-webkit-scrollbar {
@@ -31,8 +32,7 @@ body {
 .menu-items {
   overflow-y: auto;
   scroll-behavior: smooth;
-
-  /* Остальные стили */
+  -webkit-overflow-scrolling: touch;
 }
 
 .navigation ul {

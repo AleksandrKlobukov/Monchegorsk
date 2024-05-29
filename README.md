@@ -1,1 +1,1 @@
-https://alexandrnachmanovich.github.io/Monchegorsk/
+https://alexandernachmanovich.github.io/Monchegorsk/
